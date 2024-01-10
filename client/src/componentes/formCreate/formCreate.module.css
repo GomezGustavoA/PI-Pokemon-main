@@ -1,0 +1,198 @@
+:root{
+    --opacity: 0;
+}
+.container{
+    position: absolute;
+
+    max-width: 1000px;
+    top: 11em;
+    /* transform: translate(-50%, -50%); */
+    transition: opacity 0.5s 0.7s ease-in-out;
+    left: 4em;
+    width: 50%;
+    transition: 1s 0.7s ease-in-out;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+
+    opacity: var(--opacity);
+}
+.formContainer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+
+
+}
+.formContainer1{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1em 1fr 1em 1fr 1fr 1fr auto auto;
+
+}
+
+.inputForm{
+    
+    width: 100%;
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    height: 40px;
+    border-radius: 55px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 0.4rem;
+    position: relative;
+}
+.formIcons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inputForm input{
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+}
+.inputForm img{
+    width: 2em;
+    text-align: center;
+    line-height: 55px;
+    color: #acacac;
+    transition: 0.5s;
+    font-size: 1.1rem;
+}
+/* input de los rangos*/
+.containerRangos{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    gap:10%
+}
+.inputFormRangos{
+    
+    width: 100%;
+    height: 40px;
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    border-radius: 55px;
+    display: grid;
+    grid-template-columns: 35% 20% 35%;
+    padding: 0 0.4rem;
+    position: relative;
+    gap:15px;
+}
+.attribute{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.attribute h2{
+    font-size: 0.9em;
+}
+.inputFormRangos input{
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+}
+.inputFormRangos img{
+    width: 2em;
+    text-align: center;
+    line-height: 55px;
+    color: #acacac;
+    transition: 0.5s;
+    font-size: 1.1rem;
+}
+.inputRango{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inputRango input{
+    width: 4em;
+}
+.counter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+}
+/*Types*/
+
+.types1{
+  width: 380px;  
+
+}
+.inputFormTypes{
+     
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    border-radius: 20px;
+    display: grid;
+    grid-template-rows: 10% 90%;
+
+    position: relative;
+}
+.checkboxContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  /* Ajusta según la cantidad de columnas deseadas */
+    gap: 10px;  /* Agrega espacio entre las columnas */
+  }
+  
+  .checkType {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+  
+  .checkTypeInput {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;  /* O ajusta según el ancho deseado */
+  }
+
+.spanError{
+    font-size: 0.6em;
+    color: #f0f0f0;
+}
+p, h1{
+    color: #f0f0f0;
+}
+h1{
+    font-size: 4em;
+}
+span{
+color: #5995fd;
+}
+.btn{
+    width: 150px;
+    background-color: #5995fd;
+    border: none;
+    outline: none;
+    height: 49px;
+    border-radius: 49px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+

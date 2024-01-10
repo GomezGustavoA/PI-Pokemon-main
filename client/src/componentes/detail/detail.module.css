@@ -1,0 +1,106 @@
+.container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.div1{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows:15vh 75vh;
+}
+.name{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    width: 100%;
+    height: 95%;
+    overflow:hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Asegura que el contenedor tenga el 100% de altura */
+}
+
+.image img {
+    
+    max-width: auto; /* Asegura que la imagen no sea más ancha que su contenedor */
+    max-height: 95%; /* Asegura que la imagen no sea más alta que su contenedor */
+    filter: drop-shadow(10px 20px 20px rgba(0, 1, 10, 10));
+}
+
+.div2 {
+    width: 100%;
+    position: relative;
+}
+.position {
+    display: grid;
+    grid-template-rows: 6em 3em 3em 3em 3em 3em 3em 3em 3em ;
+    gap: 10px;
+    position: absolute;
+    right: 8em;
+    top: 2.3em;
+    align-items: start; /* Cambia 'start' a 'center' o 'end' según tus necesidades verticales */
+    justify-items: center; /* Cambia 'center' a 'start' o 'end' según tus necesidades horizontales */
+}
+.infoDetail{
+    width: 17em;
+    height: 6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #f0f0f0;
+    border-radius: 55px;
+}
+.infoDetail h1{
+    color: #333;
+}
+.info {
+    width: 25em;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    background-color: #f0f0f0;
+    border-radius: 55px;
+}
+.info h1, h2{
+    color: #333;
+    margin: 0;
+}
+.infoH2{
+    height: 2.7em;
+}
+.atribute{
+display: flex;
+justify-content: start;
+align-items: center;
+padding-left: 1.5em;
+}
+
+.value {
+    width: 90%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 1.5em;
+    
+}
+
+.valueText {
+ width: 11em;
+}
+
+.valueText h2 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 11em; /* Ajusta este valor según sea necesario */
+    white-space: nowrap;
+    margin: 0; /* Asegura que no haya márgenes que interfieran */
+    width: 100%;
+    text-align: start;
+}

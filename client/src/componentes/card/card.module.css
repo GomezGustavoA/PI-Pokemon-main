@@ -1,0 +1,51 @@
+.container {
+    position: relative;
+    width: 15em;
+    height: 25em;
+    background-color: rgb(32, 32, 32);
+  }
+  
+  .heading {
+    color: aliceblue;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    transform: rotate(-26deg) scaleY(1.5);
+    transform-origin: bottom right;
+    white-space: nowrap;
+    font-size: 1em;
+  }
+  .footer{
+    color: aliceblue;
+    position: absolute;
+    bottom: 3em;
+    right: 1em;
+    transform: rotate(-26deg) scaleX(1);
+    transform-origin: bottom right;
+    white-space: nowrap;
+    font-size: 1em;
+  }
+  .container2 {
+    width: 15em;
+    height: 25em;
+    background-color: rgb(248, 247, 245);
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    position: absolute;
+    clip-path: polygon(100.4% 0%, 100.4% 0%, 100.4% 69.8%, 0% 100.3%, 0% 100.3%, 0% 28.5%);
+  }
+  
+  .container2 img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  
